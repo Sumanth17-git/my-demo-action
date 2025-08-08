@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main   # Runs on push to the main branch
-
+  workflow_dispatch:   # <-- Add this line to enable manual / API triggers
 jobs:
   say-hello:
     runs-on: ubuntu-latest   # Use Ubuntu VM
